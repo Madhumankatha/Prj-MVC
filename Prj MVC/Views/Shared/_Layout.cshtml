@@ -17,9 +17,9 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="/Home/Index">Contact</a>
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Login</a>
+                    @Html.ActionLink("About","About","Home", null, new {@class="nav-link"})
+                    <a class="nav-link" href="/Home/Contact">Contact</a>
+                    <a class="nav-link" href="/Login/Index" tabindex="-1" aria-disabled="true">Login</a>
                 </div>
             </div>
         </div>
